@@ -60,16 +60,17 @@ Create environment configuration files in the root directory:
 
 ```bash
 # Development environment
-echo 'futurama_api_url=https://futuramaapi.com/api
-omdb_api_url=http://www.omdbapi.com
-omdb_api_key=YOUR_API_KEY_HERE' > .env.dev
+echo 'FUTURAMA_API_URL=https://futuramaapi.com/api
+OMDB_API_URL=http://www.omdbapi.com
+OMDB_API_KEY=YOUR_API_KEY_HERE' > .env.dev
 ```
 
 Then generate the environment config:
 
 ```bash
-flutter packages pub run environment_config:generate
+set -a && source .env.dev && set +a && flutter pub run environment_config:generate 
 ```
+
 
 ### 5. Generate Code
 
