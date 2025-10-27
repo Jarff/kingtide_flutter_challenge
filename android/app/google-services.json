@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "137353617773",
+    "project_id": "kingtide-challenge",
+    "storage_bucket": "kingtide-challenge.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:137353617773:android:9ccf170a592e8252083a64",
+        "android_client_info": {
+          "package_name": "com.embercom.kingtide_challenge"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2CQNH4uRwkTrX04T9brB4rmBZ3cvHrWU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

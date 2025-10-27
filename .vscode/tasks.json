@@ -1,0 +1,20 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "buildDevEnv",
+        "type": "shell",
+        "command": "set -a && source ${cwd}/.env.dev && set +a && flutter pub run environment_config:generate "
+      },
+      {
+        "label": "Build Runner",
+        "type": "shell",
+        "command": "flutter pub run build_runner build --delete-conflicting-outputs"
+      },
+      {
+        "label": "Build Runner Watch",
+        "type": "shell",
+        "command": "flutter pub run build_runner watch"
+      },
+    ]
+  }
