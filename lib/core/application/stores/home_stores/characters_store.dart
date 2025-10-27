@@ -43,14 +43,11 @@ abstract class CharactersStoreBase with Store {
     if (preserveCurrent) {
       isLoadingMore = true;
       final response = await apiService.getCharacters(filter: filter);
-      response.fold(
-        (failure) => null, // Handle error if needed
-        (charactersResponse) {
-          final newCharacters = charactersResponse.items.toList();
-          _filterStore.totalPages = charactersResponse.pages;
-          characters.addAll(newCharacters);
-        },
-      );
+      response.fold((failure) => null, (charactersResponse) {
+        final newCharacters = charactersResponse.items.toList();
+        _filterStore.totalPages = charactersResponse.pages;
+        characters.addAll(newCharacters);
+      });
       // Reset the flag after a short delay to prevent rapid triggers
       Future.delayed(const Duration(milliseconds: 1000), () {
         isLoadingMore = false;
