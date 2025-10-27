@@ -49,7 +49,6 @@ abstract class CharactersStoreBase with Store {
           final newCharacters = charactersResponse.items.toList();
           _filterStore.totalPages = charactersResponse.pages;
           characters.addAll(newCharacters);
-          // characters = [...characters, ...newCharacters];
         },
       );
       // Reset the flag after a short delay to prevent rapid triggers
@@ -62,7 +61,6 @@ abstract class CharactersStoreBase with Store {
       response.fold((failure) => [], (charactersResponse) {
         _filterStore.totalPages = charactersResponse.pages;
         characters = ObservableList.of(charactersResponse.items.toList());
-        // characters = charactersResponse.items.toList();
       });
       isLoading = false;
     }
