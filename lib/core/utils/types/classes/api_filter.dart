@@ -51,11 +51,6 @@ class ApiFilter {
   /// Checks if the filter is empty (no filters applied)
   bool get isEmpty => !hasFilters;
 
-  /// Clears all filters
-  ApiFilter clear() {
-    return const ApiFilter();
-  }
-
   /// Creates an empty filter
   static const ApiFilter empty = ApiFilter();
 }

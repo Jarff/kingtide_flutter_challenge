@@ -26,7 +26,6 @@ class _FavoritesViewState extends State<FavoritesView> {
         elevation: 0,
         backgroundColor: ColorName.surface,
         surfaceTintColor: Colors.transparent,
-        leading: IconButton(icon: const Icon(Icons.arrow_back), onPressed: () => Navigator.pop(context)),
         title: const Text('Favorites'),
       ),
       body: SafeArea(
