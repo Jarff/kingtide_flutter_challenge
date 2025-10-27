@@ -1,0 +1,12 @@
+{
+    "cSpell.words": [
+      "continuee",
+      "didnt",
+      "plateable",
+      "serializers"
+    ],
+    "plantuml.exportFormat": "svg",
+    "plantuml.exportOutDir": "./",
+    "plantuml.exportSubFolder": false,
+    "dart.flutterSdkPath": ".fvm/versions/3.35.4"
+  }

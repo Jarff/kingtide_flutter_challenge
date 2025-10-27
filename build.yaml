@@ -1,0 +1,9 @@
+targets:
+  $default:
+    builders:
+      built_value_generator:built_value:
+        generate_for:
+          - lib/core/infrastructure/models/*.dart
+          - lib/core/infrastructure/models/**/*.dart
+          - lib/core/utils/types/enums/*.dart
+          - lib/core/utils/types/classes/*.dart
